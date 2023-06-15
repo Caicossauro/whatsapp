@@ -1,5 +1,8 @@
 body {
   background-color: orange;
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .container {
@@ -7,14 +10,60 @@ body {
   border-radius: 0.25rem;
   background-color: #1E90FF;
   padding: 2rem;
+  margin: 2vw;
 }
 
 h1 {
   color: black;
 }
 
-.btn-primary {
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #0cf;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:hover:before {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1.5em; /* aumenta a fonte para 150% do tamanho original */
+  }
+
+  .container {
+    margin: 5%;
+    padding: 5%;
+  }
+
+  h1 {
+    font-size: 1.5em; /* aumenta a fonte do título para 150% do tamanho original */
+  }
 }
