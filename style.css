@@ -64,6 +64,47 @@ h1 {
   width: 100%;
 }
 
+#name {
+  width: 40ch;
+}
+
+#cep {
+  width: 8ch;
+}
+
+#street {
+  width: 50ch;
+}
+
+#number {
+  width: 5ch;
+}
+
+#complement {
+  width: 30ch;
+}
+
+#district {
+  width: 40ch;
+}
+
+#city {
+  width: 40ch;
+}
+
+#phone {
+  width: 10ch;
+}
+
+#mobile {
+  width: 11ch;
+}
+
+#fornecedor {
+  width: 30ch;
+  height: 3em; /* para 3 linhas de texto */
+}
+
 @media (max-width: 600px) {
   body {
     padding: 0;
