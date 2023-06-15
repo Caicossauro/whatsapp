@@ -11,6 +11,9 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
   background-color: #1E90FF;
@@ -68,7 +71,12 @@ h1 {
 
 /* Para dispositivos com largura de tela até 600px (geralmente mobile) */
 @media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+
   .container {
+    min-height: 100vh; /* Adicionado para ocupar a tela inteira */
     padding: 1rem;
     box-shadow: none;
     border-radius: 0;
