@@ -6,7 +6,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
+  <style>
     body {
       font-family: Arial;
       text-decoration: none;
@@ -71,15 +71,15 @@
     }
 
 
-    span {
-      display: block;
-      margin-top: 2rem;
-      font-size: .7rem;
-      color: #777;
-      a {
-        font-size: .7rem;
-        color: #999;
-        text-decoration: underline;
+    @media only screen and (max-width: 600px) {
+      .container {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      h1 {
+        font-size: 0.7rem;
       }
     }
   </style>
