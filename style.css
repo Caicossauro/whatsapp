@@ -67,52 +67,29 @@ h1 {
 @media (max-width: 600px) {
   body {
     padding: 0;
-    margin: 0;  
-    font-size: 18px;
-  }
-
-  .container {
-    min-height: 100vh; 
-    padding: 0.5rem; 
-    box-shadow: none;
-    border-radius: 0;
-    max-width: 100%; 
-    width: calc(100% - 2 * 0.5rem); 
-    margin: 0.5rem;  
-    background-color: #1E90FF;
-  }
-
-  .form-group {
-    margin-bottom: 0.5rem;
-  }
-
-  .button {
-    padding: .5rem 1rem;
-    font-size: .875rem;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    padding: 0;
-    margin: 0;  
+    margin: 0;
     font-size: 18px;
     background-color: orange; /* Cor de fundo da página inteira */
   }
 
   .container {
     min-height: 100vh; 
-    padding: 0.5rem; 
+    padding: 1rem; 
     box-shadow: none;
     border-radius: 0;
-    max-width: 100%; 
-    width: calc(100% - 2 * 0.5rem); 
-    margin: 0.5rem;  
+    max-width: 100%;
+    width: calc(100% - 2 * 1rem); 
+    margin: 0.5rem auto;
     background-color: #1E90FF; /* Cor de fundo do container */
   }
 
   .form-group {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;  /* Aumentar o espaçamento entre as linhas do formulário */
+  }
+
+  .form-control {
+    max-width: 90%;  /* Diminuir a largura dos campos de entrada */
+    margin: 0 auto;  /* Centralizar os campos de entrada */
   }
 
   .button {
