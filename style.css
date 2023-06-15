@@ -84,7 +84,7 @@ h1 {
   }
 
   .form-group {
-    margin-bottom: 1.5rem;  /* Aumentar o espaçamento entre as linhas do formulário */
+    margin-bottom: 2rem;  /* Aumentar o espaçamento entre as linhas do formulário */
   }
 
   .form-control {
@@ -97,3 +97,4 @@ h1 {
     font-size: .875rem;
   }
 }
+
