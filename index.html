@@ -6,19 +6,17 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
+<style>
     body {
       font-family: Arial;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 1em;
     }
 
     .container {
-      padding: 20px;
+      padding: 2vw;
       border-radius: 10px;
-      padding-top: 50px;
-      margin: 0 auto;
-      width: 100%;
+      margin: 2vw;
       text-align: center;
     }
 
@@ -70,19 +68,21 @@
       width: 100%;
     }
 
-
     @media only screen and (max-width: 600px) {
+      body {
+        font-size: 1.5em; /* aumenta a fonte para 150% do tamanho original */
+      }
+
       .container {
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 5%;
+        padding: 5%;
       }
 
       h1 {
-        font-size: 0.7rem;
+        font-size: 1.5em; /* aumenta a fonte do título para 150% do tamanho original */
       }
     }
-  </style>
+</style>
 </head>
 <body>
   <div class="container">
