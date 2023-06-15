@@ -2,6 +2,12 @@ body {
   background-color: orange;
   font-family: Arial;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1em;
+  box-sizing: border-box;
 }
 
 .container {
@@ -9,7 +15,8 @@ body {
   border-radius: 0.25rem;
   background-color: #1E90FF;
   padding: 2rem;
-  margin: 2vw;
+  width: 100%;
+  max-width: 1200px;  /* você pode ajustar este valor para o máximo que desejar */
 }
 
 h1 {
@@ -59,7 +66,6 @@ h1 {
 
 @media (max-width: 768px) {
   .container {
-    margin: 1rem;
     padding: 1rem;
   }
 }
