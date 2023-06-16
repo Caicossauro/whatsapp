@@ -81,11 +81,11 @@ h1 {
 }
   
 #cep {
-  width: 10ch;
+  width: 13ch;
 }
 
 #street {
-  width: 50ch;
+  width: 40ch;
 }
 
 #number {
@@ -105,7 +105,7 @@ h1 {
 }
 
 #phone {
-  width: 15ch;
+  width: 16ch;
 }
 
 #mobile {
@@ -116,6 +116,7 @@ h1 {
   width: 30ch;
   height: 6em; /* para 3 linhas de texto */
 }
+
 
 @media (max-width: 600px) {
   body {
