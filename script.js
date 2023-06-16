@@ -41,11 +41,12 @@ $(document).ready(function() {
     var city = $('#city').val();
     var phone = $('#phone').val();
     var mobile = $('#mobile').val();
+    var email = $('#email').val();
     var fornecedor = $('#fornecedor').val();
 
-    var formattedMessage = `Olá, meu nome é ${name}. Cpf/Cnpj: ${cpfCnpjNumber}, IE: ${ie}, Produtor Rural: ${produtorRural}, Cep: ${cep}, Rua: ${street}, Número: ${number}, Complemento: ${complement}, Bairro: ${district}, Cidade: ${city}, Telefone: ${phone}, Celular: ${mobile}, Fornecedor: ${fornecedor}`;
+    var formattedMessage = `Olá, meu nome é ${name}. Cpf/Cnpj: ${cpfCnpjNumber}, IE: ${ie}, Produtor Rural: ${produtorRural}, Cep: ${cep}, Rua: ${street}, Número: ${number}, Complemento: ${complement}, Bairro: ${district}, Cidade: ${city}, Telefone: ${phone}, Celular: ${mobile}, Fornecedor: ${fornecedor}, E-mail: ${email}`;
 
-    var phoneNumber = '5519997364254';
+    var phoneNumber = '5519996438475';
     var url = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(formattedMessage);
     window.location.href = url;
   });

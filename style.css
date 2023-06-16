@@ -112,6 +112,10 @@ h1 {
   width: 16ch;
 }
 
+#email {
+	width: 40ch;
+}
+
 #fornecedor {
   width: 30ch;
   height: 6em; /* para 3 linhas de texto */
