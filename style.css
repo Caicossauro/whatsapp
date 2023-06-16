@@ -68,6 +68,18 @@ h1 {
   width: 40ch;
 }
 
+#cpf_number {
+  width: 30ch;
+}
+
+#cnpj_number {
+  width: 30ch;
+}
+
+#ie {
+  width: 30ch;
+}
+  
 #cep {
   width: 10ch;
 }
