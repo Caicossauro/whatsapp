@@ -1,5 +1,5 @@
-
 $(document).ready(function() {
+  
   $('#number').on('input', function() {
     this.value = Math.abs(this.value);
   });

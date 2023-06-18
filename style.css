@@ -1,67 +1,57 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-  padding-top: 75px;
-
-  background: linear-gradient(to bottom, orange, hsl(14, 100%, 64%));
+  background: linear-gradient(to bottom, rgb(255, 255, 255), hsl(22, 100%, 88%));
   font-family: Verdana;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
   box-sizing: border-box;
   position: relative;
-  /* padding: 1em; Removido */
+  font-size: 20px;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
+.my-navbar {
   background-color: #1E90FF;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
+}
+.nav-link {
+  color: #ffffff !important;
+}
+.nav-link:hover {
+  color: orange !important;
+}
+.navbar-brand {
+  color: rgb(255, 255, 255) !important;
 }
 
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between; 
-  width: 70%;  
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
 }
 
-.navbar li {
-  margin: 0 20px;
-}
-
-.navbar a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px; 
-}
-
-.navbar a:hover {
-  color: #000;
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .img-custom {
   max-width: 200px;
   height: auto;
 }
+
 .container {
-  margin-bottom: auto;
+  margin-bottom: 20px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background: linear-gradient(to bottom, #1E90FF, #3856ff);
   padding: 2rem;
   width: 100%;
-  max-width: 800px;
-  margin-top: 20px;
+  max-width: 1000px;
+  margin-top: 2%;
 }
 
 .header-section {
@@ -70,6 +60,7 @@ body {
   border-radius: 10px;
   font-family: Candara;
 }
+
 
 h1 {
   color: white;
@@ -81,6 +72,9 @@ h1 {
 }
 
 .button {
+  border-color: #ffffff;
+  width: 150px;     /* Altere para o valor que deseja para a largura do botão */
+  height: 70px;
   display: block;
   margin: 0 auto;
   padding: .75rem 1.25rem;
@@ -93,7 +87,6 @@ h1 {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background-color: #0cf;
 }
 
 .button:after {
@@ -173,14 +166,20 @@ h1 {
   height: 6em; 
 }
 
-
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   body {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     background-color: orange;
   }
-
+  .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+  }
+  .navbar-nav .nav-item {
+      margin: 10px 0;
+  }
+  
   .container {
     margin-top: 20px;
     min-height: 100vh; 
@@ -189,7 +188,7 @@ h1 {
     max-width: 100%;
     background-color: #1E90FF;
   }
-
+  
   .form-group {
     margin-bottom: 2rem;  
   }
@@ -216,4 +215,6 @@ h1 {
   text-align: center;
   width: 100%;
   margin: 0;
+}
+
 }
